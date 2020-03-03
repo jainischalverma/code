@@ -1,0 +1,17 @@
+body {
+	color: black;
+	background-color: white;
+	font: 300 18px/1.5 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+}
+h1, h2, h3 {font-weight: 300;}
+.editor-post-title__block .editor-post-title__input {
+	font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+	font-weight: 300;
+}
+.wp-block-button__link {
+	border-radius: .222em;
+	background-color: #ED3524;
+	font-size: 1.222em;
+	line-height: 1;
+	padding: 1em 2em;
+}

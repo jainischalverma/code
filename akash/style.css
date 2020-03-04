@@ -812,9 +812,12 @@ header h1 img {transform: none}
 .fimage {width:100%; height:20em; padding-top:6em; display:block;}
 #singlecontent {padding:6em 0 2em; background:#F7F7F7; }
 #singlecontent .inner {display:grid; grid-template-columns:repeat(12, 1fr);  }
-#singlecontent div.sheet {grid-column:span 9; background:#fff; padding:3em 3em 1em; margin-top:-10em; border-radius:5px;}
+#singlecontent div.sheet {position:relative; grid-column:span 9; background:#fff; padding:2em 3em 1em; margin-top:-10em; border-radius:5px;}
+#singlecontent div.sheetsouter {grid-column:span 9;}
+#singlecontent div.sheets {position:relative; background:#fff; padding:2em 3em 3em; margin-bottom:5em;}
 #singlecontent div.sidebar {grid-column:span 3;}
-#singlecontent div.meta {font-size:0.8em; color:#333;}
+#singlecontent div.meta {font-size:0.8em; color:#333; line-height:1.4;}
+#singlecontent div.meta i {color:#666; border-radius: 10em; border:1px solid #666; background:#eaeaea; padding:0.1em; font-size:1em; line-height:1.4; margin-right:0.4em;}
 #singlecontent div.meta span {color:#666; padding-left:1em;}
 #singlecontent h2 { margin-top:0.6em; margin-bottom:0em; }
 #singlecontent h2 a {color:#EB3824; text-decoration:none; font-size:0.7em;}
@@ -842,7 +845,7 @@ header h1 img {transform: none}
 .sidebar ul li{list-style:none;}
 .sidebar > ul > li {margin-bottom:7em;}
 .sidebar h3 {color:#eb3824; font-size:0.9em; font-weight:bold;}
-.sidebar ul li a {text-decoration:none; display:block; border-bottom:1px dashed #afafaf; padding-bottom:1em; margin-bottom:1em;}
+.sidebar ul li a {text-decoration:none; color:#666; display:block; border-bottom:1px dashed #afafaf; padding-bottom:1em; margin-bottom:1em;}
 .sidebar .widget-container {margin-bottom:6em;}
 
 #related {padding:6em 0 22em; margin-bottom:-18em; background:#F7F7F7;}
@@ -857,6 +860,20 @@ header h1 img {transform: none}
 .relinner {padding:2em;}
 .readmore a {display:block; color:#EB3824; text-decoration:none; font-size:0.8em; padding-top:1.5em;}
 
+.relatedtitle {grid-column:span 12; margin-bottom:-3.6em; font-size:2em; color:#333;}
+
+.post-categories {list-style: none;}
+.post-categories li a {position:absolute; top:3em; right:2.5em; background-color:#EB3824; color:#fff; padding:0.4em 1.5em 0.3em; display:inline-block; text-transform:uppercase; font-size:0.8em; text-decoration: none; border-radius:10em;}
+
+.paginate {display:inline-grid; grid-template-columns:1fr 1fr; position:absolute; bottom:-2.5em; left:0;}
+.paginate a {color:#EB3824; text-decoration: none; font-size:0.9em;}
+.paginate a:first-child { justify-self:start; text-align: left;}
+.paginate a:last-child {justify-self:end; text-align: right;}
+
+.blogheader {text-align:center; color:#fff; font-size:4.5em; background: black url(img/home_hero.jpg) center center no-repeat; background-size:cover; padding:1em 0;}
+.blogheader span {color:#EB3824;}
+.blogimage {display:block; width:100%; height:20em;}
+.blogbottom {padding-bottom:16em!important; margin-bottom:-22em;}
 
 @media screen and (min-width: 90em) {
 	body > footer nav > ul {padding-left: 18.333em;}
@@ -951,15 +968,24 @@ header h1 img {transform: none}
     .fimage {height:14em; padding-top:4em; margin-top:-2em;}
     #singlecontent {padding:6em 0 0em;}
     #singlecontent div.sheet {grid-column:span 12;}
+    #singlecontent div.sheetsouter {grid-column:span 12;}
+    #singlecontent div.meta {line-height:1.7;}
     #singlecontent div.sidebar {grid-column:span 12;}
     #singlecontent h2 { margin-top:0.6em; margin-bottom:0.5em; line-height:0.8; }
     #singlecontent h2 a {color:#EB3824; text-decoration:none; font-size:0.7em;}
     #singlecontent .entry blockquote {padding-left:1.5em; border-left:1px solid #EB3824; margin:4em 0 4em 1.5em!important; display:block;}
-    .sidebar {margin-left:0; margin-top:4em;}
+    .sidebar {margin-left:0; margin-top:7em;}
     .sidebar .widget-container {margin-bottom:3em;}
     #related {padding:2em 0 22em;}
     #related .inner {display:grid; grid-template-columns:repeat(12, 1fr); grid-gap:1em;  }
     #related div.relpost {grid-column:span 12; background:#fff; max-width:20em; margin:auto;}
+   
+    .blogbottom {padding-bottom:16em!important; margin-bottom:-16em;}
+    .blogbottom .sidebar {margin-top:0em!important;}
+    .post-categories {padding-left:0;}
+    .post-categories li a {position:relative; top:auto; right:auto; margin:1.5em 0 0;}
+    .relatedtitle {margin-bottom:1em; font-size:1.5em; text-align:center; }
+    .blogheader {margin-top:-0.2em;}
     
 	body {font-size: 1em;}
 	h1 {font-size: 3em;}

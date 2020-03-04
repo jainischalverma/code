@@ -27,17 +27,16 @@
 <?php previous_post_link( '%link', '&larr; Previous' ); ?>
 <?php next_post_link( '%link', 'Next &rarr;' ); ?>
 </div>
+ 
 </div>
+
 
 <?php endwhile; endif; ?>
 
 <div class="sidebar"><?php get_sidebar(); ?></div>
 
 </div>
-
 </section>
-
-
 
 
 <section id="related">
